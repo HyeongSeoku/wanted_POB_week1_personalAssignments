@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './Input.module.scss'
 import { faCheckCircle, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,8 +9,10 @@ function Input() {
   const [emailFocus, setEmailFocus] = useState(true)
   const [pwd, setPwd] = useState('')
   const [pwdVisible, setPwdVisible] = useState(false)
-  const emailRef = useRef()
-  const pwdRef = useRef()
+
+  useEffect(() => {
+    console.log(pwdVisible)
+  }, [pwdVisible])
 
   const onFocusEmail = (e) => {
     setEmailFocus(true)
@@ -38,7 +40,6 @@ function Input() {
   }
 
   const onClickEyeIcon = () => {
-    pwdRef.current.focus()
     setPwdVisible((current) => !current)
   }
 
@@ -59,7 +60,6 @@ function Input() {
           type='text'
           value={email}
           onChange={onChangeEmail}
-          ref={emailRef}
           onFocus={onFocusEmail}
           onBlur={onBlurEmail}
         />
@@ -79,7 +79,6 @@ function Input() {
           type={pwdVisible ? 'text' : 'password'}
           value={pwd}
           onChange={onChangePwd}
-          ref={pwdRef}
           onBlur={handleBlurPwd}
         />
         <span
