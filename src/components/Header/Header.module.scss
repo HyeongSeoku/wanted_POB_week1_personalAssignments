@@ -1,0 +1,31 @@
+@use '/src/styles/constants/colors';
+
+.headerContainer {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  -webkit-backdropfilter: blur(5px);
+  -moz-backdropfilter: blur(5px);
+  -o-backdropfilter: blur(5px);
+  -ms-backdropfilter: blur(5px);
+  backdrop-filter: blur(2px);
+}
+
+.logoImg {
+  width: 70px;
+}
+
+.title {
+  font-size: larger;
+  font-weight: bold;
+}
