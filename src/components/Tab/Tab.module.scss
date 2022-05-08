@@ -1,0 +1,83 @@
+@use '/src/styles/constants/colors';
+
+.tabSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 200px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.navContainer {
+  width: 100%;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style: none;
+}
+
+.selectBar {
+  position: relative;
+  width: 33%;
+  height: 2px;
+}
+
+.selectSlider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: inline-block;
+  height: 100%;
+  background-color: colors.$MAINCOLOR;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+}
+
+.contentArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  max-height: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contentImg {
+  max-width: 30%;
+  margin-top: 20px;
+}
+
+// NavItem
+.navItemContainer {
+  width: 33%;
+  text-align: center;
+  list-style: none;
+  opacity: 0.5;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.selectedNavItemContainer {
+  width: 33%;
+  text-align: center;
+  list-style: none;
+  opacity: 1;
+}
+
+.navTextContainer {
+}

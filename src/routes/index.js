@@ -1,18 +1,17 @@
 import { LogoImage } from '../assets/svgs'
+import Input from '../components/Input'
+import Slider from '../components/Slider'
+import Tab from '../components/Tab'
 import styles from './Routes.module.scss'
 
 function App() {
   return (
     <div className={styles.app}>
-      <header className={styles.appHeader}>
-        <LogoImage className={styles.appLogo} alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className={styles.appLink} href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
+      <main className={styles.container} role='main'>
+        <Tab />
+        <Slider />
+        <Input />
+      </main>
     </div>
   )
 }

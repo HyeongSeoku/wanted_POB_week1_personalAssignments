@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client'
 import './styles/index.scss'
 import Routes from './routes'
 import reportWebVitals from './reportWebVitals'
+import { RecoilRoot } from 'recoil'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
-    <Routes />
-  </React.StrictMode>
+  <RecoilRoot>
+    <React.StrictMode>
+      <Routes />
+    </React.StrictMode>
+  </RecoilRoot>
 )
 
 // If you want to start measuring performance in your app, pass a function

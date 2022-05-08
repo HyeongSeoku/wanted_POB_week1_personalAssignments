@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Input() {
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
-  const [emailFocus, setEmailFocus] = useState(false)
+  const [emailFocus, setEmailFocus] = useState(true)
   const [pwd, setPwd] = useState('')
   const [pwdVisible, setPwdVisible] = useState(false)
   const emailRef = useRef()
