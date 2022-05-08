@@ -1,0 +1,89 @@
+@use '/src/styles/constants/colors';
+
+.toggleSection {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.radioGroup {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  background-color: colors.$GRAYA;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.radioLabel {
+  width: 50%;
+}
+
+.radioText {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 30px;
+  border-radius: 14px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.radioBtn {
+  & + .radioText {
+    opacity: 0.4;
+  }
+
+  &:checked + .radioText {
+    opacity: 1;
+  }
+
+  &:checked {
+    display: none;
+    background: none;
+  }
+  display: none;
+}
+
+.toggleSlider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 50%;
+  margin: 1px;
+  background-color: colors.$WHITE;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  transition: left 0.4s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

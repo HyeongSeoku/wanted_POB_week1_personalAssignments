@@ -40,12 +40,14 @@ function Tab() {
         </ul>
       </nav>
       <div className={styles.selectBar}>
-        <span
-          style={{
-            left: `${currentIdx === 0 ? '10px' : navItemWidth * currentIdx}px`,
-          }}
-          className={styles.selectSlider}
-        />
+        {currentMenu !== '' && (
+          <span
+            style={{
+              left: `${navItemWidth * currentIdx}px`,
+            }}
+            className={styles.selectSlider}
+          />
+        )}
       </div>
       <div className={styles.contentArea}>
         {currentMenu === '' ? (

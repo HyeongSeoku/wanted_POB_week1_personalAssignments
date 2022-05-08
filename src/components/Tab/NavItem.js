@@ -12,7 +12,7 @@ function NavItem({ title, index, currentMenu, setCurrentMenu, navRef, setCurrent
       <span
         className={styles.navTextContainer}
         role='button'
-        tabIndex='0'
+        tabIndex={index}
         data-value={title}
         onClick={onClickNavMenu}
         ref={navRef}
@@ -24,22 +24,3 @@ function NavItem({ title, index, currentMenu, setCurrentMenu, navRef, setCurrent
 }
 
 export default NavItem
-
-// const NavItemContainer = styled.li`
-//   list-style: none;
-//   width: 33%;
-//   opacity: ${(props) => (props.isSelected ? 1 : 0.5)};
-
-//   &:hover {
-//     cursor: pointer;
-//     opacity: 1;
-//   }
-//   @media ${device.mobileM} {
-//     font-size: 15px;
-//   }
-//   @media ${device.mobileS} {
-//     font-size: 14px;
-//   }
-// `
-
-// const NavText = styled.span``
