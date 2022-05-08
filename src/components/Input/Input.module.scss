@@ -1,0 +1,88 @@
+@use '/src/styles/constants/colors';
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 200px;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 75%;
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.inputContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+  height: 40px;
+  padding: 3px 5px;
+  border: 1px solid;
+  border-radius: 6px;
+  opacity: 0.4;
+}
+
+.inputContainer:focus-within {
+  opacity: 1;
+}
+
+.emailInput {
+  width: 88%;
+  background-color: rgba(255, 255, 255, 0%);
+  border: none;
+  //   color: ${(props) => props.theme.textColor};
+  //   &::placeholder {
+  //     color: ${(props) => props.theme.textColor};
+  //     opacity: 0.5;
+  //   }
+}
+
+.pwdinput {
+  width: 88%;
+  background-color: rgba(255, 255, 255, 0%);
+  border: none;
+}
+
+.validMsg {
+  font-size: small;
+  color: colors.$RED;
+}
+
+.icon {
+  color: colors.$GRAYA;
+  opacity: 0.4 !important;
+}
+
+.correctIcon {
+  color: colors.$MAINCOLOR;
+  opacity: 1 !important;
+}
+
+.pwdIcon {
+  color: colors.$GRAYA;
+  opacity: 0.4 !important;
+}
+
+.correctPwdIcon {
+  color: colors.$MAINCOLOR;
+  opacity: 1 !important;
+}
