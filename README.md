@@ -2,7 +2,9 @@
 
 원티드 프리온보딩 프론트엔드 4차 1주차 개인 과제입니다.
 
-## 데모
+## [🚀 데모](https://hyeongseoku.github.io/wanted_POB_week1_personalAssignments/)
+
+## 데모 시연 영상
 ![week1_personal_project](https://user-images.githubusercontent.com/48541850/167294602-14468ae9-49d3-421a-832e-a73bd7581aaf.gif)
 
 
